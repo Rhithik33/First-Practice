@@ -24,7 +24,7 @@ public class Main {
         try (final CloseableHttpClient httpclient = HttpClients.createDefault()) {
             final HttpGet httpget = new HttpGet("https://official-joke-api.appspot.com/random_joke");
 
-            logger.fatal("Exeting request " + httpget.getMethod() + " " + httpget.getUri());
+            logger.info("Executing request " + httpget.getMethod() + " " + httpget.getUri());
 
                  httpclient.execute(httpget, response -> {
                 System.out.println("----------------------------------------");
