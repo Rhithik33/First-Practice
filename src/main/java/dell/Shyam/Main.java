@@ -27,7 +27,7 @@ public class Main {
             logger.info("Executing request " + httpget.getMethod() + " " + httpget.getUri());
 
                  httpclient.execute(httpget, response -> {
-                System.out.println("----------------------------------------");
+                System.out.println("hi----------------------------------------");
                 System.out.println(httpget + "->" + new StatusLine(response));
                 // Process response message and convert it into a value object
                      logger.error( (response.getCode() + EntityUtils.toString(response.getEntity())));
